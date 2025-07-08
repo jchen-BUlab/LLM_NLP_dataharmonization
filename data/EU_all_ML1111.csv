@@ -1,0 +1,71 @@
+Sheet_Def,ADS Name,Variable,Label,Definition (derived Vars),Type,CRF Question,Label_CRF,deriv_info,deriv_info_null,deriv_info_len,Label_len,deriv_info_key_words
+Demographics Information,All Datasets,All Datasets_COUNTRY ,Country Code ,Country Code ,C,,Country Code ,Country Code ,False,2,2,Country Code 
+Habits,HABITS,HABITS_ALCSTAT,Alcohol Status,"8,2,7,6,5,97",N,Alcohol status,Alcohol Status; Alcohol status,"8,2,7,6,5,97",False,6,2,"8,2,7,6,5,97"
+Living Arrangement,LVARR,LVARR_LVLOCAT,Living Location,"1,2",N,Does the subject currently live in an urban or rural (non-urban) location?,Living Location; Does the subject currently live in an urban or rural (non-urban) location?,"1,2",False,2,2,"1,2"
+Falls Assessment (FALL-G),FALL,FALL_FALFLLNM,Falls Flag LNM,No or Yes,C,Has the subject had any falls since the last data collection (or in the last three months at the baseline observation)?,Falls Flag LNM; Has the subject had any falls since the last data collection (or in the last three months at the baseline observation)?,No or Yes,False,3,3,No or Yes
+Study Treatment,SDYTRT,SDYTRT_ANYTRFL,Any AD treatment Flag,0 or 1 (if any diagnoses have been selected),N,"Has the subject taken any AD treatment since the last data collection (or any ongoing treatment at the baseline observation), including any treatment started at this observation?","Any AD treatment Flag; Has the subject taken any AD treatment since the last data collection (or any ongoing treatment at the baseline observation), including any treatment started at this observation?",0 or 1 (if any diagnoses have been selected),False,9,4,0 or 1 (if any diagnoses have been selected)
+Study Treatment,SDYTRT,SDYTRT_SDYTRTSTDTC,Study Treatment Start Date Character,,C,Treatment Start Date,Study Treatment Start Date Character; Treatment Start Date,,True,0,5,
+Study Treatment,SDYTRT,SDYTRT_SDYTRTENDTC,Study Treatment End Date Character,,C,Treatment End Date,Study Treatment End Date Character; Treatment End Date,,True,0,5,
+Study Treatment,SDYTRT,SDYTRT_SDYTRCHGTP,Treatment Change Type,"     use across subjid for changes in treatment during 12-months interval (Visit 1-7):
+1. From one ACHEI to another ACHEI - ACHEI was taken at baseline then it stopped and another ACHEI (only one) started later;
+2. From any ACHEI to memantine - ACHEI was taken at baseline then it stopped and memantine started later;
+3. Adding memantine to ACHEI - ACHEI was taken at baseline, then memantine was added, and both baseline ACHEI and memantine were taken simulteneously during a certain interval;
+4. None at baseline to AChEI - no treatment at baseline was taken then AChEI started (either one or multiple AChEI);
+5. None at baseline to Memantine - no treatment at baseline was taken then Memantine started;
+6. None at baseline to AChEI and Memantine - no treatment at baseline was taken then AChEI and Memantine were taken simultaneously; 
+7. From one AChEI to multiple AChEI â€“ (one ACHEI at baseline then another/multiple ACHEI was added) or (one ACHEI at baseline stops then multiple ACHEI were added);
+8. Memantine to AChEI -  Memantine was taken at baseline then it stopped and ACHEI started later;
+9. Dropping ACHEI from ACHEI + Memantine
+10. Dropping Memantine from ACHEI + Memantine
+99. Other - otherwise (E.g. a) patient starts with both A and B at baseline, then A stops, B continues and C is added; b) patient starts with A, then stops it, then continues A again; etc.)
+
+",N,,Treatment Change Type,"     use across subjid for changes in treatment during 12-months interval (Visit 1-7):
+1. From one ACHEI to another ACHEI - ACHEI was taken at baseline then it stopped and another ACHEI (only one) started later;
+2. From any ACHEI to memantine - ACHEI was taken at baseline then it stopped and memantine started later;
+3. Adding memantine to ACHEI - ACHEI was taken at baseline, then memantine was added, and both baseline ACHEI and memantine were taken simulteneously during a certain interval;
+4. None at baseline to AChEI - no treatment at baseline was taken then AChEI started (either one or multiple AChEI);
+5. None at baseline to Memantine - no treatment at baseline was taken then Memantine started;
+6. None at baseline to AChEI and Memantine - no treatment at baseline was taken then AChEI and Memantine were taken simultaneously; 
+7. From one AChEI to multiple AChEI â€“ (one ACHEI at baseline then another/multiple ACHEI was added) or (one ACHEI at baseline stops then multiple ACHEI were added);
+8. Memantine to AChEI -  Memantine was taken at baseline then it stopped and ACHEI started later;
+9. Dropping ACHEI from ACHEI + Memantine
+10. Dropping Memantine from ACHEI + Memantine
+99. Other - otherwise (E.g. a) patient starts with both A and B at baseline, then A stops, B continues and C is added; b) patient starts with A, then stops it, then continues A again; etc.)
+
+",False,231,3,multiple achei added memantine achei. interval baseline achei treatment baseline. taken achei memantine taken simultaneously. 
+Neuropsychiatric Inventory,NPI,NPI_NPIQSNUM ,NPI Question Number,See NPID (NPI Item Detail) definition for NPI Question Numbers,C,,NPI Question Number,See NPID (NPI Item Detail) definition for NPI Question Numbers,False,10,3,See NPID (NPI Item Detail) definition for NPI Question Numbers
+Neuropsychiatric Inventory,NPI,NPI_NPICHGBLTR,Change from Baseline to Visit - TR Phase,"Result at current visit - result at BL
+Not missing for Total Scores",N,,Change from Baseline to Visit - TR Phase,"Result at current visit - result at BL
+Not missing for Total Scores",False,12,7,"Result at current visit - result at BL
+Not missing for Total Scores"
+Zarit Burden Interview,ZBIERVAT,ZBIERVAT_ZBBLVALTR,Baseline Value - TR Phase ,Result at Visit 1,N,,Baseline Value - TR Phase ,Result at Visit 1,False,4,4,Result at Visit 1
+Resource Utilization In Dementia,RUD,RUD_RUDASMDTC ,RUD Assessment Date Character,,C,,RUD Assessment Date Character,,True,0,4,
+Disposition,DISPOSIT,DISPOSIT_DS,Disposition,"Subject disposition during the Main phase.
+
+Use MRSDCA.
+
+If SUBJID= --redacted-- and SDTYPE =1 then DS=4. (Patient --redacted-- has no data in SUM or CARESUM. This case was documented as a permanent issue for the datalock. According to the information received from the PA, site user was not available for data entry at the time of the lock. Reason for discontinuation is set to â€˜Lost to follow upâ€™.)
+
+
+
+",N,,Disposition,"Subject disposition during the Main phase.
+
+Use MRSDCA.
+
+If SUBJID= --redacted-- and SDTYPE =1 then DS=4. (Patient --redacted-- has no data in SUM or CARESUM. This case was documented as a permanent issue for the datalock. According to the information received from the PA, site user was not available for data entry at the time of the lock. Reason for discontinuation is set to â€˜Lost to follow upâ€™.)
+
+
+
+",False,69,1,time lock reason discontinuation set. disposition main phase use mrsdca. redacted data sum caresum case. 
+Disposition,DISPOSIT,DISPOSIT_DTHDTC ,Death Date Character,.,C,Date of death,Death Date Character; Date of death,.,False,0,3,.
+Medical History - Comorbidities,MHCMBD,MHCMBD_DISCDLNM_Depression,Disease Code SNM  : Depression,,,,Disease Code SNM  : Depression,,True,0,4,
+Mini-Mental State Exam,MMSE,MMSE_MMSERN_MMSES10,MMSE Item Result Numeric MMSES10  Correct response to orientation to place what is the floor of the building (room number or address),,,,MMSE Item Result Numeric MMSES10  Correct response to orientation to place what is the floor of the building (room number or address),,True,0,22,
+Neuropsychiatric Inventory,NPI,NPI_NPIRN_NPIS82,NPI Item Result Numeric NPIS82 : Caregiver Distress: Apathy/Indifference,,,,NPI Item Result Numeric NPIS82 : Caregiver Distress: Apathy/Indifference,,True,0,9,
+health-related quality of life ,EQ5D,EQ5D_EQ5RN_EQ5S3,EQ-5D Item Result Numeric EQ5S3 : Usual Activities,,,,EQ-5D Item Result Numeric EQ5S3 : Usual Activities,,True,0,8,
+health-related quality of life ,EQ5D,EQ5D_EQ5RN_EQ5S1,EQ-5D Item Result Numeric EQ5S1 : Mobility,,,,EQ-5D Item Result Numeric EQ5S1 : Mobility,,True,0,7,
+Zarit Burden Interview,ZBIERVAT,ZBIERVAT_ZBIRN_ZBI18,ZBI Item Result Numeric ZBI18 : Do you wish you could just leave the care of your relative to someone else?,,,,ZBI Item Result Numeric ZBI18 : Do you wish you could just leave the care of your relative to someone else?,,True,0,20,
+Zarit Burden Interview,ZBIERVAT,ZBIERVAT_ZBIRN_ZBI20,ZBI Item Result Numeric ZBI20 : Do you feel you should be doing more for your relative?,,,,ZBI Item Result Numeric ZBI20 : Do you feel you should be doing more for your relative?,,True,0,16,
+Zarit Burden Interview,ZBIERVAT,ZBIERVAT_ZBIRN_ZBI14,"ZBI Item Result Numeric ZBI14 : Do you feel that your relative seems to expect you to take care of him/her, as if you were the only one he/she could depend on?",,,,"ZBI Item Result Numeric ZBI14 : Do you feel that your relative seems to expect you to take care of him/her, as if you were the only one he/she could depend on?",,True,0,33,
+Alzheimer's Disease Assessment Scale,ADAS,ADAS_ADASRN_ADASS2,ADAS Item Result Numeric ADASS2 : Comprehension of Spoken Language,,,,ADAS Item Result Numeric ADASS2 : Comprehension of Spoken Language,,True,0,9,
+Alzheimer's Disease Assessment Scale,ADAS,ADAS_ADASRN_ADASS1,ADAS Item Result Numeric ADASS1 : Language,,,,ADAS Item Result Numeric ADASS1 : Language,,True,0,6,
+Time to Event,TTEVENT,TTEVENT_TTERN_TTIN,Time to Event Result Numeric (Time) TTIN : Time to Institutionalization,,,,Time to Event Result Numeric (Time) TTIN : Time to Institutionalization,,True,0,10,
