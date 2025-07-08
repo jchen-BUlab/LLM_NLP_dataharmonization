@@ -13,8 +13,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 data/: example data for running the single NLP model and the Random Forest model.
 
-code/Single_model_var_matching.ipynb: Python code that uses different individual NLP emthods, including LLM models and the Fuzzy Match method to match variables between two studies: GERAS-EU and GERAS-JP.
-
-code/ML_experiments/: Python code that implements Random Forest model that combines invidual NLP methods to match variables between GERAS-EU and GERAS-JP studies.
-
-code/Sensitivity_analysis.ipynb: Python code that assesses importance of features used by the Random Forest model.
+code/: see code/readme.txt for details
