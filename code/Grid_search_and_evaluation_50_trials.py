@@ -48,7 +48,7 @@ def extract_between_phrases(file_path, start_phrase, end_phrase):
     for i, line in enumerate(lines):
         if line.startswith(start_phrase):
             start_index = i
-        elif end_phrase in line:
+        if end_phrase in line:
             end_index = i
             break
     
